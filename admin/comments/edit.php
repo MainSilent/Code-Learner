@@ -1,0 +1,62 @@
+<?php
+
+session_start();
+if (!isset($_SESSION['auth'])) {
+	header('Location: /admin');
+	die();
+}
+
+include '../db.php';
+
+try {
+
+?>
+<link rel="stylesheet" type="text/css" href="/admin/bootstrap.css">
+<style>
+
+* {padding: 0; margin: 0;}
+body { background-color: #ccc }
+.dash{
+  background-color: white;
+  width: 500px;
+  margin: auto;
+  margin-top: 8%;
+  border-radius: 0.5vw;
+  box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.2), 0 0.25vw 0.25vw 0 rgba(0, 0, 0, 0.24);
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+</style>
+<head>
+	<title>Comments</title>
+	<script src="/js/jquery-3.4.1.min.js"></script>
+	<link rel="icon" type="image/png" href="/images/Logo.png">
+</head>
+
+<div class="d-block-flex p-3 dash">
+	<?php 
+	$id = $_GET['id'];
+	$sql = "SELECT name, email, comment, feedback, date FROM comment WHERE id = $id";
+	$res = $conn->query($sql)->fetch();
+	?>
+	<h4 style="text-align: right;"><?php echo $res['name']; ?></h1><hr>
+	<h5 style="text-align: right;">:نظر</h5>
+	<p style="text-align: right;" dir="rtl"><?php echo $res['comment']; ?></p><hr>
+	<h5 style="text-align: right;">:جواب</h5>
+	<p style="text-align: right;" dir="rtl"><?php echo $res['feedback']; ?></p><hr>
+	<h6><?php echo $res['email']; ?></h6><hr>
+	<p class="form-control float-right" style="text-align: right; width: 36.6%;"><?php echo date('Y-m-d H:i:s', $res['date']); ?></p><br><br>
+	<a href="/admin/comments/" >&larr; Back</a>
+</div>
+<?php
+$conn=null;
+} catch(PDOException $e){echo $e->getMessage();}
+?>

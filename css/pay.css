@@ -1,0 +1,148 @@
+/*------Animation------------*/
+@keyframes input {
+    from {border-bottom: 2.6px solid gray;}
+    to {border-bottom: 2.6px solid #13ec13;}
+}
+/*------Animation------------*/
+#pay-page
+{
+ 	margin: 0 auto;
+ 	background-color: white;
+ 	width: 60%;
+ 	border-radius: 10px;
+ 	margin-top: 3%;
+  margin-bottom: 3%;
+}
+#pay-text
+{
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+}
+#line
+{
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 90%;
+}
+#btn 
+{
+ 	margin: 0 auto;
+ 	margin-top: 25px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 23px;
+  font-weight: bolder;
+  cursor: pointer;
+  border-color: #4CAF50;
+  color: green;
+  transition: 0.2s;
+  display: block;
+  outline: none;
+}
+#btn:hover
+{
+  background-color: #4CAF50;
+  color: white;
+}
+.input1
+{
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  direction: rtl;
+  text-align: right;
+  display: block;
+  font-size: 25px;
+  margin-top: 25px;
+  width: 100%;
+  border-bottom: 2.6px solid gray;
+  color: transparent;
+  text-shadow: 0 0 0 black;
+  opacity: 0.7;
+  padding: 6px 5px;
+}
+.input1:hover
+{
+  border-bottom: 2.6px solid green;
+  opacity: 1;
+}
+.input1:focus
+{
+  opacity: 1;
+  animation-name: input;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+}
+.input1:valid {
+  border-bottom: 2.6px solid green;
+  opacity: 1;
+}
+.prefix
+{
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 30px;
+}
+ .img-prefix
+{
+  margin-top: -5px;
+  margin-left: 31%;
+  position: absolute;
+  width: 50px;
+}
+.phone
+{
+  margin-left: 31.1%;
+  width: 50px;
+}
+@media screen and (max-width: 1000px)
+{
+ #pay-page
+ {
+  width: 80%;
+ }
+ .prefix
+ {
+  width: 70%;
+ }
+ .img-prefix
+ {
+  margin-left: 58%;
+ }
+}
+@media screen and (max-width: 700px)
+{
+ #pay-page
+ {
+  width: 95%;
+ }
+ .prefix
+ {
+  width: 73%;
+  margin-right: 21%;
+ }
+ .img-prefix
+ {
+  margin-left: 74%;
+  margin-top: -5px;
+  width: 43px;
+ }
+ .phone
+ {
+  width: 45px;
+ }
+ .input1
+ {
+  font-size: 18.5px;
+ } 
+ #line
+ {
+  width: 95%;
+ }
+}

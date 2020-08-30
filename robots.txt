@@ -1,0 +1,5 @@
+user-agent: *
+Allow: /$
+Disallow: /
+
+Sitemap: http://www.code-learner.ir/sitemap.txt

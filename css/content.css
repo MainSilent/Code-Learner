@@ -1,0 +1,630 @@
+@font-face
+{
+  font-family: num;
+  src:url(/font/num.ttf);
+}
+@font-face
+{
+  font-family: iran;
+  src:url(/font/iran.ttf);
+}
+.center
+{
+ display: block;
+ margin: 0 auto;
+}
+#content-page
+{
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 3%;
+  border-radius: 10px;
+  background: white;
+  text-align: center;
+}
+#banner
+{
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#price
+{
+  margin-top: 1.2%;
+  float: right;
+  color: #39c6c6;
+  margin-right: 15px;
+  font-size: 2em;
+  font-family:num;
+}
+#pdf-ico
+{
+ float: left;
+ transition: 0.4s;
+ color: red;
+ border: 2px solid red;
+ border-radius: 10px;
+ padding: 12px 50px;
+ text-decoration: none;
+ margin-top: 0.945%;
+ font-size: 30px;
+}
+#pdf-ico:hover
+{
+  background-color: red;
+  color: white;
+}
+#pay-ico
+{
+ float: left;
+ transition: 0.5s;
+ color: #39c6c6;
+ border: 2px solid #39c6c6;
+ border-radius: 10px;
+ padding: 12px 90px;
+ text-decoration: none;
+ margin-top: 0.945%;
+ margin-left: 6px;
+ font-size: 30px;
+}
+#pay-ico:hover
+{
+  background-color: #39c6c6;
+  color: white;
+}
+#text
+{
+  padding: 35px;
+  margin-top: -15px;
+  margin-bottom: -46px;
+  font-size: 30px;
+  font-family: iran;
+}
+#but
+{
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 55px;
+  border-radius: 10px;
+  background: white;
+  text-align: center;
+  height: 88px;
+}
+/*****  Vertical Menu *******/
+#but-ver
+{
+  text-align: center;
+  display: none;
+  background: white;
+  width: 95%;
+  height: 202px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 55px;
+}
+#price-ver
+{
+  color: #39c6c6;
+  font-family:num;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: 2em;
+}
+#pdf-ico-ver
+{
+ transition: 0.4s;
+ color: red;
+ border: 2px solid red;
+ border-radius: 10px;
+ padding: 12px 120px;
+ text-decoration: none;
+ font-size: 30px;
+ margin-top: 120px;
+}
+#pdf-ico-ver:hover
+{
+  background-color: red;
+  color: white;
+}
+.pdf-ico-ver-div {
+  margin-top: 24px;
+  margin-right: 15px;
+}
+#pay-ico-ver
+{
+ transition: 0.4s;
+ color: #39c6c6;
+ border: 2px solid #39c6c6;
+ border-radius: 10px;
+ /*padding: 12px 50px;*/
+ padding: 12px 110px;
+ text-decoration: none;
+ font-size: 30px;
+ width: 100%;
+ margin-top: 50px;
+}
+#pay-ico-ver:hover
+{
+  background-color: #39c6c6;
+  color: white;
+}
+/***** Vertical Menu *****/
+
+/*------------Comment Section----------------------*/
+input::-ms-clear {
+  display: none;
+}
+#comment
+{
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: white;
+  margin-top: 9.3px;
+  margin-bottom: 30px;
+}
+#comment-text
+{
+  outline: none;
+  min-height: 350px;
+  min-width: 65%;
+  border: 2px solid #ff5126;
+  font-size: 30px;
+  max-width: 90%;
+/*comment-text Padding-----------*/
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 6px; 
+  padding-right: 6px;
+/*comment-text Padding-----------*/
+  direction: rtl;
+}
+#comment-text:valid
+{
+  border: 2px solid #3bb873;
+}
+#comment-text:invalid
+{
+  border: 2px solid #ff5126;
+}
+#comment-line
+{
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: black 2px solid;
+  margin-top: 40px;
+  width: 86%;
+}
+#captcha
+{
+  margin: 0 auto;
+  display: table;
+  margin-bottom: 20px;
+  margin-top: -1%;
+}
+/*------------Comment Section----------------------*/
+.centered-name 
+{
+  width: 35%;
+  margin: auto;
+}
+.centered-email
+{
+  width: 50%;
+  margin: auto;
+}
+.group {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+} 
+.label {
+  position: absolute;
+  top: 40px;
+  color: #666666;
+  font: 400 26px Roboto;
+  cursor: text;
+  transition: 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+.input {
+  display: block;
+  width: 100%;
+  padding-top: 36px;
+  border: none;
+  border-radius: 0;
+  font-size: 30px;
+  transition: .3s ease;
+  text-align: center;
+}
+.input:valid ~ .label 
+{
+  top: 3px;
+  font: 400 26px Roboto;
+}
+.input:focus {
+  outline: none;
+}
+.top
+{
+  top: 40px;
+}
+.input:focus ~ .label {
+  top: 3px;
+  font: 400 26px Roboto;
+}
+.input:focus ~ .bar:before {
+  transform: translateX(0);
+}
+.bar {
+  border-bottom: 2px solid #ff5126;
+  width: 100%;
+  margin-top: 6px;
+  transition: .3s ease;
+}
+.input:valid ~ .bar
+{
+  border-bottom: 2px solid #3bb873;
+}
+/*------------------------------------------*/
+
+/*-----------Text Area---------------------*/
+.label-com {
+  display: block;
+  padding-top: 30px;
+  text-align: center;
+}
+.label-com .label-text {
+  color: #ff5126;
+  cursor: text;
+  font-size: 25px;
+  line-height: 20px;
+  transform: translateY(-34px);
+  transition: all 0.3s;
+}
+/*-----------Text Area---------------------*/
+
+/* ---------Submit Buttom----------------*/
+ #send {
+  width: 100px;
+  height: 50px;
+  background: transparent;
+  border-radius: 10px;
+  will-change: transform;
+  transition: all 0.2s ease;
+  border: 2px solid #ff5126;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 25px;
+  color: #ff5126;
+  outline: none;
+  text-align: center;
+}
+#send:hover {
+  background: #ff5126;
+  color: #ffffff;
+}
+#send:active {
+  font-size: 25px;
+  transform: translateY(1px);
+}
+#send.active {
+  font-size: 0;
+  border-radius: 25px;
+  width: 50px;
+  background: transparent;
+}
+#send.loader {
+  border-right: 2px solid #ffffff;
+  animation: loader 0.4s linear infinite;
+}
+#send.success {
+  background: #3bb873;
+  border-color: #3bb873;
+  font-size: 25px;
+  color: #ffffff;
+}
+@keyframes loader {
+  0% {
+            transform: rotateZ(0);
+  }
+  100% {
+            transform: rotateZ(360deg);
+  }
+}
+/* ---------Submit Buttom----------------*/
+
+/*-------------------Comments------------*/
+#comments
+{
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 2px solid #ff5126; 
+  border-radius: 10px;
+  height: auto;
+  width: 75%;
+}
+
+#comments-name
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 40px;
+} 
+#comments-text
+{
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: right;
+  width: 82%;
+  font-size: 28px;
+  line-height: 1.4;
+}
+#comments-line
+{
+  margin: 0 auto;
+  border-bottom: 2px solid #ff5126;
+  width: 86%;
+}
+.confirm
+{
+  width: 50px; 
+  height: 40px;
+  float: right;
+  margin-right: 6px;
+}
+#reply
+{
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 87.5%;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  background-color: #3bb873;  
+}
+#reply-text
+{
+  color: white;
+  font-size: 28px;
+  text-align: right;
+  padding: 10px;
+  font-weight: bold;
+  line-height: 1.45;
+}
+/*-------------------Comments------------*/
+/* Start Alert */
+.alert-div {
+  padding: 0.3% 20%;
+  direction: rtl;
+}
+.message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-weight: lighter;
+  text-align: right;
+  font-size: 20px;
+  display: none;
+}
+.fade {
+  opacity: 0;
+  transition: opacity 0.15s linear;
+}
+.fade.show {
+  opacity: 1;
+}
+.close {
+  float: right;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+}
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  opacity: .75;
+}
+.close:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+.alert-heading {
+  color: inherit;
+}
+.alert-link {
+  font-weight: 700;
+}
+.alert-dismissible .close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.75rem 1.25rem;
+  color: inherit;
+}
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+.alert-success hr {
+  border-top-color: #b1dfbb;
+}
+.alert-success .alert-link {
+  color: #0b2e13;
+}
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.alert-warning hr {
+  border-top-color: #ffe8a1;
+}
+
+.alert-warning .alert-link {
+  color: #533f03;
+}
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+.alert-danger hr {
+  border-top-color: #f1b0b7;
+}
+.alert-danger .alert-link {
+  color: #491217;
+}
+/* End Alert */
+/*------------------Responsive-----------*/ 
+@media screen and (max-width: 1300px)
+{
+  #pay-ico, #pdf-ico
+  { 
+   margin-top: 1.4%;
+  }
+  #price {
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 1000px)
+ {
+#content-page, #but, #comment
+{
+  width: 85%;
+}
+#comment-text
+{ 
+  margin: 0;
+  font-size: 20px;
+  min-width: 90%;
+  min-height: 220px;
+  word-spacing: -5px;
+}
+.label-com .label-text
+{
+  font-size: 20px;
+}
+#reply
+{
+  width: 97%;
+  margin-bottom: 5px;
+}
+.res ,.input:focus ~ .label ,.input:valid ~ .label
+{
+  font-size: 20px;
+}
+.label
+{
+  top: 30px;
+}
+#reply-text
+{
+  margin: 0 auto;
+  margin-left: -10px;
+  width: 100%;
+  font-size: 17px;
+  text-align: center;
+}
+#comments-text
+  {
+    width: 98.5%;
+    font-size: 17px;
+    text-align: center;
+  }
+#comments-name
+  {
+    font-size: 24px;
+    text-align: center;
+  }
+#comments-line
+  {
+ width: 95%;
+  }
+.centered-name
+ {
+  width: 70%;
+ }
+.centered-email
+  {
+  width: 85%;
+  }
+ #comment-line, #comments
+ {
+  width: 96%;
+ }
+ #banner
+ {
+  height: 210px;
+ }
+ #text
+ {
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 10px; 
+ }
+}
+ @media screen and (max-width: 900px)
+{
+  #pay-ico
+  { 
+   margin-top: 1.8%;
+  }
+  #pdf-ico
+  {
+   margin-top: 1.8%;
+  }
+}
+@media screen and (max-width: 700px)
+{
+  #content-page, #but-ver, #comment
+  {
+    width: 95%;
+  }
+  #but
+  {
+    display: none;
+  }
+  #but-ver
+  {
+    display: block;
+  }
+  @-moz-document url-prefix() {
+    #but-ver { height: 250px; }
+    .pdf-ico-ver-div {
+      margin-top: 12%;
+    }
+  }
+  .alert-div {
+    padding: 1% 3%;
+  }
+  .alert-success .close {display: none;}
+}
+/*------------------Responsive-----------*/

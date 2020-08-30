@@ -1,0 +1,41 @@
+* {padding: 0; margin: 0;}
+body { background-color: #ccc }
+
+.dash{
+  background-color: white;
+  width: 250px;
+  margin: auto;
+  margin-top: 15%;
+  border-radius: 0.5vw;
+  box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.2), 0 0.25vw 0.25vw 0 rgba(0, 0, 0, 0.24);
+}
+.sel
+{
+	font-size: 1vw;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 0.5vw;
+}
+.sel:hover
+{
+	opacity: 0.9;
+}
+.product
+{
+	color: white;
+	background: #33cc33;
+}
+.details-list
+{
+	color: white;
+	background: #00b8e6;	
+}
+.pl-list
+{
+	color: white;
+	background: #e68a00;
+}
+.logout
+{
+	background: #e62e00;
+}
