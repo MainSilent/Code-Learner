@@ -10,7 +10,7 @@ if (!isset($_SESSION['payment_auth'])) {
     die();
 }
 
-$MerchantID = '6e7c0893-ee30-46d3-b110-aefc42f732b4';
+$MerchantID = 'xxxxx-xxxxx-xxxxx-xxxx';
 $Amount = 129999; //Amount will be based on Toman
 $Authority = $_GET['Authority'];
 $refid_check_sql = 'SELECT refid FROM transaction WHERE authority = :authority';
