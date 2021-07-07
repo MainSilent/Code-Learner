@@ -10,7 +10,7 @@ if (!isset($_POST['name'])) {
     die();
 }
 
-$MerchantID = '6e7c0893-ee30-46d3-b110-aefc42f732b4';  //Required
+$MerchantID = 'xxxxx-xxxxx-xxxxx-xxxx';  //Required
 $Amount = 129999; //Amount will be based on Toman  - Required
 $Description = 'خرید مجموعه ی آموزشی طراحی وب سایت';  // Required
 $Name = $_POST['name']; // Optional
