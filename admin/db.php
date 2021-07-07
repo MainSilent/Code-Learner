@@ -3,7 +3,7 @@ if (!defined('db-auth')) {
 	header("HTTP/1.0 404 Not Found");
 }
 
-$servername = "localhost";
+$servername = "127.0.0.1";
 $username = "codelear_main";
 $password = "4Dyr92ieAO;X]5";
 $dbname = "codelear_main";
