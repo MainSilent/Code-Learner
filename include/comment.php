@@ -30,13 +30,14 @@ if($responseKeys["success"]) {
 	if ($stmt->rowCount() == 2) {
 		header('HTTP/1.0 302 Found');
 	} else {
-		$sql = "INSERT INTO tmp_comment (name, email, comment, `date`) VALUES (?, ?, ?, ?)";
-		$stmt = $conn->prepare($sql);
-		$stmt->bindParam(1, $name);
-		$stmt->bindParam(2, $email);
-		$stmt->bindParam(3, $comment);
-		$stmt->bindParam(4, $date);
-		$res = $stmt->execute();
+		// $sql = "INSERT INTO tmp_comment (name, email, comment, `date`) VALUES (?, ?, ?, ?)";
+		// $stmt = $conn->prepare($sql);
+		// $stmt->bindParam(1, $name);
+		// $stmt->bindParam(2, $email);
+		// $stmt->bindParam(3, $comment);
+		// $stmt->bindParam(4, $date);
+		// $res = $stmt->execute();
+		$res = true;
 		if ($res == true) {
 			header('HTTP/1.0 200 OK');
 		}
