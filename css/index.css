@@ -184,11 +184,14 @@
 
          #h1
          {
+          font-family: naz;
           text-align: center; 
           font-size: 30px;
+          padding: 0 2px;
          }
          #h3
          {
+          font-family: naz;
           text-align: center; 
           line-height: 1.4;
           font-size: 25px;
