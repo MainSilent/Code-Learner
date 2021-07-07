@@ -4,8 +4,8 @@ if (!defined('db-auth')) {
 }
 
 $servername = "127.0.0.1";
-$username = "codelear_main";
-$password = "4Dyr92ieAO;X]5";
+$username = "root";
+$password = "000000";
 $dbname = "codelear_main";
 $options = [
 	PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
